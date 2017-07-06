@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Andre Watts: Frontend Developer</title>
+  <meta name="description" content="My Bov Academy portfolio.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <!-- SIDE MENU -->
+  <div class="side-menu">
+    <div class="menu-list row">
+      <div class="col">
+        <h2><span id="#first-name">Andre</span> Watts</h2>
+      </div>
+      <div class="col"><a href="#link-about">About</a></div>
+      <div class="col">
+        <input type="checkbox" id="drop-down" />
+        <label for="drop-down" id="drop">Projects</label>
+        <div class="project-list">
+          <ul>
+            <li><a href="#link-button">Buttons</a></li>
+            <li><a href="#link-forms">Forms</a></li>
+            <li><a href="#link-product">Product Listing</a></li>
+            <li><a href="#link-tabs">Tabs Component</a></li>
+            <li><a href="#link-accordion">Accordion</a></li>
+            <li><a href="#link-image-gallery">Image Gallery</a></li>
+            <li><a href="#link-calculator">Calculator</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col"><a href="#link-skills">Skills</a></div>
+      <div class="col"><a href="#link-contact">Contact</a></div>
+      <div class="col row search">
+        <div class="col">
+          <input type="search" id="search-field" />
+          <label for="search-field">Search</label>
+          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="foot">© 2017 Andre Watts</div>
+  </div>
+
+  <!-- CHECKBOX HACK -->
+  <input type="checkbox" id="show-menu" name="toggle" />
+  <label for="show-menu" id="bars">
+    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+  </label>
+
+  <!-- SITE CONTENTS -->
+  <div class="site-wrap">
+    <div class="content">
+
+      <!-- NAVIGATION -->
+      <nav>
+        <div class="row">
+          <div class="col name">
+            <h1><span>Andre</span> Watts</h1>
+          </div>
+
+          <div class="col nav-tabs">
+            <ul>
+              <li><a href="#link-about">About</a></li>
+              <li><a href="#link-projects">Projects</a></li>
+              <li><a href="#link-skills">Skills</a></li>
+              <li><a href="#link-contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col find">
+            <input type="search" id="find" />
+            <label for="find">Search</label>
+            <button type="submit"><a href="#modal"><i class="fa fa-search" aria-hidden="true"></i></a></button>
+          </div>
+        </div>
+        <!-- .row (for nav) -->
+      </nav>
+      <!-- nav -->
+
+      <!-- ABOUT SECTION -->
+      <section class="about" id="link-about">
+        <div class="row">
+          <div class="col">
+            <h1>About.</h1>
+            <p>Hello there!</p>
+
+            <p>My name is <span id="intro">Andre</span> and <span id="introduction">I like to make stuff with HTML, CSS, and JavaScript.</span> I first started learning code back in December 2013. Ever since then I've gained a special passion for Web Development.
+              So much to the point that I wake up and go to sleep thinking about code!</p>
+            <p>While learning to make machines do my bidding I've come to the conclusion that the possibilites are endless and I'm excited to see where this journey takes me.</p>
+          </div>
+        </div>
+        <hr>
+      </section>
+      <!-- .about -->
+
+      <!-- PROJECTS SECTION -->
+      <section class="projects" id="link-projects">
+        <div class="row">
+          <div class="col">
+            <h1>Projects.</h1>
+            <p>Here are a few projects I've created to help facilitate by understanding of frontend technology.</p>
+            <div class="accordion">
+              <ul class="list">
+
+                <!-- buttons tab -->
+                <li class="tab row" id="link-button">
+                  <input type="radio" id="buttons" name="tabs" checked />
+                  <label for="buttons">Buttons</label>
+                  <div class="project-content col">
+
+                    <div class="carousel row">
+                      <div class="slides col">
+                        <input type=radio id="slide-1" name="button-slides" checked/>
+                        <label for="slide-3" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="slide-2" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images\buttons_screenshot.png" />
+                        </div>
+
+                        <label for="slide-1" class="dots dot-1" id="dot-1"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="slide-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="slide-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+
+                      </div>
+                      <!-- .slides -->
+
+                      <div class="slides col">
+                        <input type=radio id="slide-2" name="button-slides" />
+                        <label for="slide-1" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="slide-3" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src='portfolio_images\button_components_gif.gif' border='0' alt='ezgif.com-video-to-gif' />
+                        </div>
+
+                        <label for="slide-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="slide-2" class="dots dot-2" id="dot-2"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="slide-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                      <!-- .slides -->
+
+                      <div class="slides col">
+                        <input type=radio id="slide-3" name="button-slides" />
+                        <label for="slide-2" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="slide-1" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <div class="button-slide">
+                            <h3>A Basic Button</h3>
+                            <div class="button">Buy Now</div>
+
+                            <h3>A Button Element with the Button Class</h3>
+                            <button class="button">Send Mail</button>
+
+                            <h3>An Anchor with a Button Class</h3>
+                            <a href="#" class="button">Search</a>
+                          </div>
+                        </div>
+
+                        <label for="slide-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="slide-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="slide-3" class="dots dot-3" id="dot-3"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                      <!-- .slides -->
+                    </div>
+                    <!-- .carousel -->
+
+                    <header>Technologies: HTML5 and CSS3</header>
+                    <p>A display of reusable button components.</p>
+                    <div class="project-links row">
+                      <div class="col">
+                        <a href="https://andrewatts85.github.io/web-components/components/buttons/#"><i class="fa fa-external-link" aria-hidden="true"></i> Demo</a>
+                      </div>
+                      <div class="col">
+                        <a href="https://github.com/andrewatts85/web-components/tree/master/components/buttons"><i class="fa fa-github-alt" aria-hidden="true"></i> Source</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- .project-content -->
+                </li>
+                <!-- .tab -->
+
+                <!-- forms tab -->
+                <li class="tab row" id="link-forms">
+                  <input type="radio" id="forms" name="tabs" />
+                  <label for="forms">Forms</label>
+                  <div class="project-content col">
+
+                    <div class="carousel row">
+                      <div class="slides col">
+                        <input type=radio id="form-1" name="form-slides" checked/>
+                        <label for="form-6" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="form-2" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/sign_up.png" />
+                        </div>
+
+                        <label for="form-1" class="dots dot-1"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-4" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-5" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-6" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                      <!-- .slides -->
+
+                      <div class="slides col">
+                        <input type=radio id="form-2" name="form-slides" />
+                        <label for="form-1" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="form-3" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/questionnaire.png" />
+                        </div>
+
+                        <label for="form-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-2" class="dots dot-2"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-4" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-5" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-6" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                      <!-- .slides -->
+
+                      <div class="slides col">
+                        <input type=radio id="form-3" name="form-slides" />
+                        <label for="form-2" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="form-4" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/login.png" />
+                        </div>
+
+                        <label for="form-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-3" class="dots dot-3"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-4" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-5" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-6" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                      <!-- .slides -->
+
+                      <div class="slides col">
+                        <input type=radio id="form-4" name="form-slides" />
+                        <label for="form-3" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="form-5" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/shipping.png" />
+                        </div>
+
+                        <label for="form-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-4" class="dots dot-4"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-5" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-6" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                      <!-- .slides -->
+
+                      <div class="slides col">
+                        <input type=radio id="form-5" name="form-slides" />
+                        <label for="form-4" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="form-6" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/appointment.png" />
+                        </div>
+
+                        <label for="form-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-4" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-5" class="dots dot-5"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-6" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                      <!-- .slides -->
+
+                      <div class="slides col">
+                        <input type=radio id="form-6" name="form-slides" />
+                        <label for="form-5" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="form-1" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/creditcard.png" />
+                        </div>
+
+                        <label for="form-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-4" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-5" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="form-6" class="dots dot-6"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                      <!-- .slides -->
+                    </div>
+                    <!-- .carousel -->
+
+                    <header>Technologies: HTML5, CSS3, Vanilla JavaScript</header>
+                    <p>A variety of forms with custom validation included.</p>
+                    <div class="project-links row">
+                      <div class="col">
+                        <a href="https://github.com/andrewatts85/web-components"><i class="fa fa-external-link" aria-hidden="true"></i> Demo</a>
+                      </div>
+                      <div class="col">
+                        <a href="https://github.com/andrewatts85/web-components"><i class="fa fa-github-alt" aria-hidden="true"></i> Source</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- .tab -->
+
+                <!-- product listing tab -->
+                <li class="tab row" id="link-product">
+                  <input type="radio" id="product-listing" name="tabs" />
+                  <label for="product-listing">Product Listing</label>
+                  <div class="project-content col">
+
+                    <div class="carousel row">
+                      <div class="slides col">
+                        <input type=radio id="product-listing-1" name="product-listing-slides" checked/>
+                        <label for="product-listing-3" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="product-listing-2" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/products.png" />
+                        </div>
+
+                        <label for="product-listing-1" class="dots dot-1"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="product-listing-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="product-listing-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="product-listing-2" name="product-listing-slides" />
+                        <label for="product-listing-1" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="product-listing-3" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/cart.png" />
+                        </div>
+
+                        <label for="product-listing-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="product-listing-2" class="dots dot-2"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="product-listing-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="product-listing-3" name="product-listing-slides" />
+                        <label for="product-listing-2" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="product-listing-1" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/product_listing_page_gif.gif" />
+                        </div>
+
+                        <label for="product-listing-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="product-listing-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="product-listing-3" class="dots dot-3"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                    </div>
+                    <!-- .carousel -->
+
+                    <header>Technologies: HTML5, CSS3, Vanilla JavaScript</header>
+                    <p>An example ecommerce mockup. Includes a fully functional shopping cart built with vanilla JavaScript.</p>
+                    <div class="project-links row">
+                      <div class="col">
+                        <a href="https://andrewatts85.github.io/product-listing-page-shoe-store/#"><i class="fa fa-external-link" aria-hidden="true"></i> Demo</a>
+                      </div>
+                      <div class="col">
+                        <a href="https://github.com/andrewatts85/product-listing-page-shoe-store"><i class="fa fa-github-alt" aria-hidden="true"></i> Source</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- .tab -->
+
+                <!-- tabs component -->
+                <li class="tab row" id="link-tabs">
+                  <input type="radio" id="tabs-component" name="tabs" />
+                  <label for="tabs-component">Tabs</label>
+                  <div class="project-content col">
+
+                    <div class="carousel row">
+                      <div class="slides col">
+                        <input type=radio id="tab-1" name="tab-slides" checked/>
+                        <label for="tab-3" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="tab-2" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/tabs.png" />
+                        </div>
+
+                        <label for="tab-1" class="dots dot-1"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="tab-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="tab-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="tab-2" name="tab-slides" />
+                        <label for="tab-1" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="tab-3" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/tabs_gif.gif" />
+                        </div>
+
+                        <label for="tab-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="tab-2" class="dots dot-2"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="tab-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="tab-3" name="tab-slides" />
+                        <label for="tab-2" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="tab-1" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <div class="tabComponent">
+                            <!-- Insert code to create tabbed components here -->
+                            <div class="fancy-tab col">
+                              <input type="radio" id="home" name="fancy-tabs" checked/>
+                              <label for="home">Home Decor</label>
+                              <div class="fancy-tab-content">
+                                <p>Browse through our list of Home Decor Items</p>
+                                <hr>
+                              </div>
+                            </div>
+
+                            <div class="fancy-tab col">
+                              <input type="radio" id="furniture" name="fancy-tabs" />
+                              <label for="furniture">Furniture</label>
+                              <div class="fancy-tab-content">
+                                <p>Flash Sale on Living Room and Bedroom Furniture</p>
+                                <hr>
+                              </div>
+                            </div>
+
+                            <div class="fancy-tab col">
+                              <input type="radio" id="kitchen" name="fancy-tabs" />
+                              <label for="kitchen">Kitchen</label>
+                              <div class="fancy-tab-content">
+                                <p>Bring the best out of the masterchef in you!!</p>
+                                <hr>
+                              </div>
+                            </div>
+
+                            <div class="fancy-tab col">
+                              <input type="radio" id="clearance" name="fancy-tabs" />
+                              <label for="clearance">Clearance</label>
+                              <div class="fancy-tab-content">
+                                <p>Red hot deals at affordable prices. Check out our clearance section for more details.</p>
+                                <hr>
+                              </div>
+                            </div>
+
+                          </div>
+                          <!-- .tabComponent -->
+                        </div>
+                        <!-- .slide-content -->
+
+                        <label for="tab-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="tab-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="tab-3" class="dots dot-3"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                    </div>
+                    <!-- .carousel -->
+
+                    <header>Technologies: HTML5 and CSS3</header>
+                    <p>A simple tab component. No need for JavaScript here.</p>
+                    <div class="project-links row">
+                      <div class="col">
+                        <a href="https://andrewatts85.github.io/tab-component/"><i class="fa fa-external-link" aria-hidden="true"></i> Demo</a>
+                      </div>
+                      <div class="col">
+                        <a href="https://github.com/andrewatts85/tab-component"><i class="fa fa-github-alt" aria-hidden="true"></i> Source</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- .tab -->
+
+                <!-- accordion component -->
+                <li class="tab row" id="link-accordion">
+                  <input type="radio" id="accordion-component" name="tabs" />
+                  <label for="accordion-component">Accordion</label>
+                  <div class="project-content col">
+
+                    <div class="carousel row">
+                      <div class="slides col">
+                        <input type=radio id="accordion-1" name="accordion-slides" checked/>
+                        <label for="accordion-3" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="accordion-2" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/accordion.png" />
+                        </div>
+
+                        <label for="accordion-1" class="dots dot-1"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="accordion-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="accordion-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="accordion-2" name="accordion-slides" />
+                        <label for="accordion-1" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="accordion-3" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/accordion_gif.gif" />
+                        </div>
+
+                        <label for="accordion-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="accordion-2" class="dots dot-2"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="accordion-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="accordion-3" name="accordion-slides" />
+                        <label for="accordion-2" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="accordion-1" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <div class="accordion">
+                            <ul class="list">
+
+                              <!-- Item 1 -->
+                              <li class="accordion-tab">
+                                <input type="checkbox" id="appetizers" name="menu" />
+                                <label class="sub-menu" for="appetizers">Appetizers</label>
+                                <div class="accordion-content">
+                                  <ul class="food-items">
+                                    <li class="header"><b>Check out our tasty apps!</b></li>
+                                    <li class="topic"><b>Happy hour menu - half off!!</b></li>
+                                    <li>Chicken Wings (6) - $5.99</li>
+                                    <li>Calamari - $7.99</li>
+                                    <li>Garlic Breaded pickles - $4.59</li>
+                                  </ul>
+                                </div>
+                              </li>
+
+                              <!-- Item 2 -->
+                              <li class="accordion-tab">
+                                <input type="checkbox" id="entrees" name="menu" />
+                                <label class="sub-menu" for="entrees">Entrees</label>
+                                <div class="accordion-content">
+                                  <ul class="food-items">
+                                    <li class="header"><b>Choose from a wide range of pastas, combos and signature dishes</b></li>
+                                    <li class="topic"><b>Pastas</b></li>
+                                    <li>Chicken Picatta - $14.99</li>
+                                    <li>Chicken Pollo - $12.99</li>
+                                    <li>Lasagna (Chicken/beef) - $10.99</li>
+                                    <li class="topic"><b>Combos</b></li>
+                                    <li>Italian Sausage & Beef Combo - $15.99</li>
+                                    <li>Mac n Cheese with Chicken Tenders - $8.99</li>
+                                  </ul>
+                                </div>
+                              </li>
+
+                              <!-- Item 3 -->
+                              <li class="accordion-tab">
+                                <input type="checkbox" id="desserts" name="menu" />
+                                <label class="sub-menu" for="desserts">Desserts</label>
+                                <div class="accordion-content">
+                                  <ul class="food-items">
+                                    <li class="header"><b>New Summer specials!!</b></li>
+                                    <li class="topic"><b>Shakes and Ice Creams</b></li>
+                                    <li>Turtle Caramel Shake - $6.99</li>
+                                    <li>Chocolate Brownie Bite - $4.99</li>
+                                  </ul>
+                                </div>
+                              </li>
+
+                              <!-- Placeholder for Item 4 -->
+                              <li class="accordion-tab">
+                                <input type="checkbox" id="soups-salads" name="menu" />
+                                <label class="sub-menu" for="soups-salads">Soups & Salads</label>
+                                <div class="accordion-content">
+                                  <ul class="food-items">
+                                    <li class="header"><b>All you care to eat soup and salad bar</b></li>
+                                    <li class="topic"><b>Soups</b></li>
+                                    <li>Bistro French Onion Soup - $4.49</li>
+                                    <li>Vegetarian Summer Corn Chowder - $5.59</li>
+                                    <li class="topic"><b>Salads</b></li>
+                                    <li>Balsamic Chicken Salad - $5.49</li>
+                                    <li>Quinoa, Arugula and Avocado Salad - $6.49</li>
+                                  </ul>
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+
+                        <label for="accordion-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="accordion-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="accordion-3" class="dots dot-3"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                    </div>
+                    <!-- .carousel -->
+
+                    <header>Technologies: HTML5 and CSS3</header>
+                    <p>A accordion component. No JavaScript!</p>
+                    <div class="project-links row">
+                      <div class="col">
+                        <a href="https://andrewatts85.github.io/accordion/"><i class="fa fa-external-link" aria-hidden="true"></i> Demo</a>
+                      </div>
+                      <div class="col">
+                        <a href="https://github.com/andrewatts85/accordion"><i class="fa fa-github-alt" aria-hidden="true"></i> Source</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- .tab -->
+
+                <!-- image gallery -->
+                <li class="tab row" id="link-image-gallery">
+                  <input type="radio" id="image-gallery" name="tabs" />
+                  <label for="image-gallery">Image Gallery</label>
+                  <div class="project-content col">
+
+                    <div class="carousel row">
+                      <div class="slides col">
+                        <input type=radio id="image-gallery-1" name="image-gallery-slides" checked/>
+                        <label for="image-gallery-3" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="image-gallery-2" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/image_gallery.png" />
+                        </div>
+
+                        <label for="image-gallery-1" class="dots dot-1"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="image-gallery-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="image-gallery-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="image-gallery-2" name="image-gallery-slides" />
+                        <label for="image-gallery-1" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="image-gallery-3" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/image_gallery_gif.gif" />
+                        </div>
+
+                        <label for="image-gallery-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="image-gallery-2" class="dots dot-2"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="image-gallery-3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="image-gallery-3" name="image-gallery-slides" />
+                        <label for="image-gallery-2" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="image-gallery-1" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <div class="image-gallery">
+                            <div class="wrapper">
+
+                              <label for="img1" id="thumbnail1"><img src="https://static.pexels.com/photos/24353/pexels-photo.jpg" /></label>
+                              <input type="radio" id="img1" name="thumb" checked/>
+                              <div class="picture" id="imgOne"><img src="https://static.pexels.com/photos/24353/pexels-photo.jpg" /></div>
+
+                              <label for="img2" id="thumbnail2"><img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" /></label>
+                              <input type="radio" id="img2" name="thumb" />
+                              <div class="picture" id="imgTwo"><img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" /></div>
+
+                              <label for="img3" id="thumbnail3"><img src="https://static.pexels.com/photos/26796/pexels-photo.jpg" /></label>
+                              <input type="radio" id="img3" name="thumb" />
+                              <div class="picture" id="imgThree"><img src="https://static.pexels.com/photos/26796/pexels-photo.jpg" /></div>
+
+                              <label for="img4" id="thumbnail4"><img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" /></label>
+                              <input type="radio" id="img4" name="thumb" />
+                              <div class="picture" id="imgFour"><img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" /></div>
+
+                              <label for="img5" id="thumbnail5"><img src="https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg" /></label>
+                              <input type="radio" id="img5" name="thumb" />
+                              <div class="picture" id="imgFive"><img src="https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg" /></div>
+                            </div>
+                            <!-- .wrapper -->
+                          </div>
+                        </div>
+
+                        <label for="image-gallery-1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="image-gallery-2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="image-gallery-3" class="dots dot-3"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                    </div>
+                    <!-- .carousel -->
+
+                    <header>Technologies: HTML5 and CSS3</header>
+                    <p>Pure HTML and CSS image gallery.</p>
+                    <div class="project-links row">
+                      <div class="col">
+                        <a href="https://andrewatts85.github.io/image-gallery/"><i class="fa fa-external-link" aria-hidden="true"></i> Demo</a>
+                      </div>
+                      <div class="col">
+                        <a href="https://github.com/andrewatts85/image-gallery"><i class="fa fa-github-alt" aria-hidden="true"></i> Source</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- .tab -->
+
+                <!-- calculator -->
+                <li class="tab row" id="link-calculator">
+                  <input type="radio" id="calculator" name="tabs" />
+                  <label for="calculator">Calculator</label>
+                  <div class="project-content col">
+
+                    <div class="carousel row">
+                      <div class="slides col">
+                        <input type=radio id="calculator1" name="calculator-slides" checked/>
+                        <label for="calculator3" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="calculator2" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/calculator.png" />
+                        </div>
+
+                        <label for="calculator1" class="dots dot-1"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="calculator2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="calculator3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="calculator2" name="calculator-slides" />
+                        <label for="calculator1" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="calculator3" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <img src="portfolio_images/calculator_gif.gif" />
+                        </div>
+
+                        <label for="calculator1" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="calculator2" class="dots dot-2"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="calculator3" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+
+                      <div class="slides col">
+                        <input type=radio id="calculator3" name="calculator-slides" />
+                        <label for="calculator2" class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></label>
+                        <label for="calculator1" class="right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></label>
+                        <div class="slide-content">
+                          <div class="calc">
+
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" readonly="readonly" class="screen" />
+                              </div>
+                            </div>
+                            <!-- row -->
+
+                            <div class="row">
+                              <div class="clear col">clear</div>
+                              <div class="del col">del</div>
+                            </div>
+                            <!-- row -->
+
+                            <div class="row">
+                              <div class="num col">7</div>
+                              <div class="num col">8</div>
+                              <div class="num col">9</div>
+                              <div class="op col">*</div>
+                            </div>
+                            <!-- row -->
+
+                            <div class="row">
+                              <div class="num col">4</div>
+                              <div class="num col">5</div>
+                              <div class="num col">6</div>
+                              <div class="op col">/</div>
+                            </div>
+                            <!-- row -->
+
+                            <div class="row">
+                              <div class="num col">1</div>
+                              <div class="num col">2</div>
+                              <div class="num col">3</div>
+                              <div class="op col">+</div>
+                            </div>
+                            <!-- row -->
+
+                            <div class="row">
+                              <div class="num col">.</div>
+                              <div class="num col">0</div>
+                              <div class="equal col">=</div>
+                              <div class="op col">-</div>
+                            </div>
+                            <!-- row -->
+
+                          </div>
+                          <!-- calc -->
+                        </div>
+
+                        <label for="calculator1" class="dots "><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="calculator2" class="dots"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                        <label for="calculator3" class="dots dot-3"><i class="fa fa-circle" aria-hidden="true"></i></label>
+                      </div>
+                    </div>
+                    <!-- .carousel -->
+
+                    <header>Technologies: HTML5 and CSS3, Vanilla JavaScript</header>
+                    <p>A simple calculator.</p>
+                    <div class="project-links row">
+                      <div class="col">
+                        <a href="https://andrewatts85.github.io/calculator-vanilla-js/"><i class="fa fa-external-link" aria-hidden="true"></i> Demo</a>
+                      </div>
+                      <div class="col">
+                        <a href="https://github.com/andrewatts85/calculator-vanilla-js"><i class="fa fa-github-alt" aria-hidden="true"></i> Source</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- .tab -->
+
+              </ul>
+            </div>
+            <!-- .accordion -->
+          </div>
+          <!-- .col -->
+        </div>
+        <!-- .row -->
+      </section>
+      <!-- .projects -->
+
+      <!-- SKILLS SECTION -->
+      <section class="skills" id="link-skills">
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h1>Skills.</h1>
+            <p>The majority of my skills currently consist of frontend technologies. I plan to further my skill set with backend technologies such as PHP, MYsql, and NodeJS. I'm also excited about learning frameworks such as Laravel and ReactJS.</p>
+
+            <div class="graph-container row">
+
+              <div class="knowledge" id="backend">
+                <span id="frontend">85%</span>
+                <span>15%</span>
+              </div>
+
+              <div class="bar-graph frontend col">
+                <header>Frontend Development</header>
+                <div class="row">
+                  <div class="legend col">
+                    <span>Expert</span>
+                    <span>Proficient</span>
+                    <span>Competent</span>
+                    <span>Learning</span>
+                  </div>
+                  <!-- .legend -->
+                  <div class="bars col">
+                    <div class="bar fe-bar1" data-tooltip="I'm very, very comfortable with plain vanilla JavaScript.">
+                      <span class="topic">JavaScript</span>
+                    </div>
+
+                    <div class="bar fe-bar2" data-tooltip="I can create responsive, pure HTML5/CSS3 component's that don't require JS.">
+                      <span class="topic">HTML/CSS</span>
+                    </div>
+
+                    <div class="bar fe-bar3" data-tooltip="Currently learning ReactJS right now!">
+                      <span class="topic">ReactJS</span>
+                    </div>
+
+                    <div class="bar fe-bar4" data-tooltip="I'm comfortable with jQuery.">
+                      <span class="topic">jQuery</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- .frontend -->
+
+              <div class="bar-graph backend col">
+                <header>Backend Development</header>
+                <div class="row">
+                  <div class="legend col">
+                    <span>Expert</span>
+                    <span>Proficient</span>
+                    <span>Competent</span>
+                    <span>Learning</span>
+                  </div>
+                  <!-- .legend -->
+                  <div class="bars col">
+                    <div class="bar fe-bar1" data-tooltip="I'm looking forward to learning the backend starting with PHP.">
+                      <span class="topic">PHP</span>
+                    </div>
+
+                    <div class="bar fe-bar2" data-tooltip="Looking forward to adding MySQL to my toolbox.">
+                      <span class="topic">MySQL</span>
+                    </div>
+
+                    <div class="bar fe-bar3" data-tooltip="It is mandatory for me to learn NodeJS.">
+                      <span class="topic">NodeJS</span>
+                    </div>
+
+                    <div class="bar fe-bar4" data-tooltip="I'm very interested in learning a PHP framework.">
+                      <span class="topic">Laravel</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- .backend -->
+
+              <div class="bar-graph other col">
+                <header>Other Skills</header>
+                <div class="row">
+                  <div class="legend col">
+                    <span>Expert</span>
+                    <span>Proficient</span>
+                    <span>Competent</span>
+                    <span>Learning</span>
+                  </div>
+                  <!-- .legend -->
+                  <div class="bars col">
+                    <div class="bar fe-bar1" data-tooltip="BOV Academy has help improve my writting skills.">
+                      <span class="topic">Written Communication</span>
+                    </div>
+
+                    <div class="bar fe-bar2" data-tooltip="I am a confident problem solver.">
+                      <span class="topic">Problem Solving</span>
+                    </div>
+
+                    <div class="bar fe-bar3" data-tooltip="I've learned how to learn. It's my superpower.">
+                      <span class="topic">Research</span>
+                    </div>
+
+                    <div class="bar fe-bar4" data-tooltip="I set a schedule and stick to it.">
+                      <span class="topic">Project Management</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- .other -->
+            </div>
+            <!-- .graph-container -->
+          </div>
+          <!-- .col -->
+        </div>
+        <!-- .row -->
+
+      </section>
+      <!-- .skills -->
+
+      <!-- CONTACT SECTION -->
+      <section class="contact" id="link-contact">
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h1>Contact.</h1>
+            <p>Got a question or comment? Checkout my (clickable) digital business card to get in touch!</p>
+
+            <div class="business-card">
+              <label>
+              <input type="checkbox" />
+              <div class="card">
+                <div class="front">
+                    <i class="fa fa-retweet gray" aria-hidden="true"></i>
+                    <h2>Andre Watts</h2>
+                    <h6 class="gray">Front-End Developer</h6>
+                    <p>Feel free to contact me anytime! If you're looking for a Junior Developer who is very passionate about the web and loves to learn, I would love to talk to you!</p>
+                    <a href="#" class="pink">andrewatts85@gmail.com</a><br>
+                    <section>
+                      <img src="portfolio_images/DigitalBusinessCard_Assets/enc1.png" id="enc"/>
+                      <h6>Andre Watts <br><span id="purple">on</span> <span class="pink">Encyclopedia.MD</span></h6>
+                    </section>
+                    <ul>
+                      <li><a href="https://twitter.com/AndreWatts85"><img src="portfolio_images/DigitalBusinessCard_Assets/twitter.png" /></a></li>
+                      <li><a href="https://github.com/andrewatts85" /></a><img src="portfolio_images/DigitalBusinessCard_Assets/github1.png" /></li>
+                    </ul>
+                </div>
+                <div class="back">
+                  <i class="fa fa-retweet gray" aria-hidden="true"></i>
+                  <p>
+                    HIRE ME!
+                  </p>
+                  <span>Andre Watts</span>
+                </div>
+              </div>
+            </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- .contact -->
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="row">
+          <div class="col">
+            <p>&copy; 2017 Andre Watts</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- MODAL -->
+      <div class="lightbox" id="modal">
+        <div class="row">
+          <div class="col">
+            <div class="overlay">
+              <div class="popup">
+                <a href="#">&times;</a>
+                <h1>Oops..</h1>
+                <p>Sorry, this feature is temporarily disabled.</p>
+              </div>
+              <!-- .popup -->
+            </div>
+            <!-- .overlay -->
+          </div>
+          <!-- .col -->
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .lightbox -->
+
+    </div>
+    <!-- .content -->
+
+  </div>
+  <!-- .site-wrap -->
+
+  <script src="calc.js"></script>
+</body>
+
+</html>
