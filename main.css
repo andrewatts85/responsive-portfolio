@@ -135,6 +135,7 @@ input {
 
 .side-menu .menu-list .search .col label {
   position: absolute;
+  left: 1em;
   color: #191970;
   -webkit-transform: translateY(0);
           transform: translateY(0);
