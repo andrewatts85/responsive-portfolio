@@ -27,6 +27,13 @@ body {
   position: relative;
 }
 
+/* FIX FOR IOS INPUT STYLES */
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
 /* .SIDE-MENU STYLES */
 .side-menu {
   background-color: snow;
@@ -1256,13 +1263,6 @@ hr {
 /* MODAL STYLES */
 .site-wrap .content .lightbox {
   display: none;
-}
-
-/* FIX FOR IOS INPUT STYLES */
-input {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
 }
 
 /* MEDIA QUERIES */
